@@ -1,0 +1,30 @@
+/*
+@auother: Nuyun-Kalamullage
+@package: CurencyConvertorClient
+@date: 22.12.2022
+*/
+*{
+    background: azure;
+}
+
+.my-div{
+    text-align: center;
+    background: azure;
+}
+.h1{
+    font-size: 40px;
+}
+.dropDown{
+    border-left: 3px black;
+    border-width: 2px;
+    margin-left: -5px;
+}
+.button{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.button:hover{
+    background-color: cadetblue;
+    color: white;
+}

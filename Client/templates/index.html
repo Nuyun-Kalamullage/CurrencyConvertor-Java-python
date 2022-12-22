@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Convertor</title>
+    <link rel="stylesheet"  href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+<div class="my-div">
+    <h1 class="h1">Currency Convertor</h1>
+    <div >
+        <form name="submit_form" action="/" method="POST">
+            <div >
+                <input  type="number" value="{{firstAmount}}" name="first_amount" placeholder="1" required>
+                <SELECT class="dropDown" name="selectedFirstCurrency" id="selectedFirstCurrency" required>
+                    <option value="{{firstCurrency}}" text="{{firstCurrency}}" >{{firstCurrency}}</option>
+                {% for c in currencyList %}
+                <OPTION } >{{c}}</option>
+                {% endfor %}
+                </SELECT>
+            </div>
+            <br>
+            <div >
+                <input  value="{{secondAmount}}" type="text"  name="secondAmount" placeholder="0.00" readonly>
+                <SELECT class="dropDown" name="selectedSecondCurrency" id="selectedSecondCurrency" required>
+                    <option value="{{secondCurrency}}" text="{{secondCurrency}}" >{{secondCurrency}}</option>
+                {% for c in currencyList %}
+                <OPTION  >{{c}}</option>
+                {% endfor %}
+                </SELECT>
+            </div>
+            <br>
+            <br>
+            <input class="button"type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+</body>
+</html>
