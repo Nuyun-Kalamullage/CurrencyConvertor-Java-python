@@ -1,5 +1,15 @@
 # Server-Side of Currency Convertor project using SOAP Web-Service
 >completed date: 22-12-2022
+<p  align="center">
+<img  alt="Coding"  src="https://github.com/Nuyun-Kalamullage/CurrencyConvertor-Java-python/blob/main/cc.png">
+</p>
+
+Our Project Includes, 
+
+    *	5 java Files ( Main Class is in Main.java file)
+    *	1 stocks.csv file 
+    *	1 README.txt file 
+
 
 This 02 packages includes,
 >In server package,
